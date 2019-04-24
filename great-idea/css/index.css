@@ -69,9 +69,11 @@ body{
 }
 nav {
 	width: 100%;
-	/* margin-bottom: 95px; */
-	display: block;
-	background: #fffffff0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: baseline;
+	background: #f7f7f7af;
 	position: fixed;
 	top: 0;
 	left:0;
@@ -80,12 +82,8 @@ nav {
 
 }
 nav a{
-	margin-left: 7%;
 	text-align: center;
-	display: inline-block;
-	width: 4%;
 	transition: color 400ms ease, font-weight 400ms ease;
-
 }
 
 nav a:hover {
@@ -93,12 +91,6 @@ nav a:hover {
 	font-weight: 800;
 }
 
-nav img{
-	display: inline-block;
-	margin-left: 8%;
-	width: 15%;
-	vertical-align: middle;
-}
 
 nav a{
 	text-decoration: none;
@@ -108,40 +100,23 @@ nav a{
 
 header {
 
-	/* height: 70%; */
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
 	margin-bottom: 100px;
 	margin-top: 80px;
 }
 
-div.innovation {
-	width: 47%;
-	display: inline-block;
-	height: 100%;
-	margin: 2%;
-	vertical-align: middle;
-}
 
-div.header-img {
-	width: 47%;
-	display: inline-block;
-	height: 100%;
-	vertical-align: middle;
-
-}
-
-div.header-img img{
-
-	display: block;
-	width: 75%;
-	margin: auto;
+header img{
+	width: 500px;
 }
 
 header h1 {
-	font-size: 75px;
+	font-size: 90px;
+	width: 18%;
 	text-align: center;
-	width: 30%;
-	display: block;
-	margin: auto;
 	transition: color 600ms;
 }
 
@@ -168,42 +143,48 @@ h1 button:hover{
 main {
 	border-top: solid 2px black;
 	border-bottom: solid 2px black;
+	display: flex;
+	flex-direction: column;
 }
 
 section.top	{
 	padding-top: 50px;
 	padding-bottom: 50px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: space-around;
+	justify-content: space-around;
 }
 
 section.top h2 {
-	display: inline-block;
-	width: 48%;
 	text-align: left;
 	font-size: 30px;
-
+	width: 40%;
 }
 
 section.top p {
-	display: inline-block;
-	width: 48%;
 	text-align: left;
 	font-size: 20px;
-
+	width: 40%;
 }
 
 img.middle-img {
 	width: 100%;
-	display: block;
 	margin: auto;
 }
 
 section.bottom {
 	padding-top: 50px;
 	padding-bottom: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: space-around;
+	flex-wrap: wrap;
 }
 
 section.bottom h2{
-	display: inline-block;
 	width: 32%;
 	text-align: left;
 	font-size: 30px;
@@ -211,7 +192,6 @@ section.bottom h2{
 }
 
 section.bottom p{
-	display: inline-block;
 	width: 32%;
 	text-align: left;
 	font-size: 20px;
