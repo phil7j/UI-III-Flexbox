@@ -82,15 +82,16 @@ nav a{
 	color: grey;
 	font-size: 20px;
 	text-align: center;
-	transition: color 400ms ease-in, border 400ms ease-in-out;
-	border: solid 1px #f7f7f7;
-	padding: 15px;
+	transition: color 400ms ease-in, border 400ms ease-in-out, border-radius 400ms ease-out;
+	border: solid 2px #f7f7f7;
+	padding: 10px;
 		}
 
 nav a:hover {
-	color: black;
+	color: rgb(230, 129, 36);
 	font-weight: 800;
-	border: solid 1px black;
+	border: solid 2px rgb(230, 129, 36);
+	border-radius: 25px;
 }
 
 
@@ -227,6 +228,7 @@ section.services {
 	flex-direction: column;
 	justify-content: space-evenly;
 	height: 600px;
+	margin-bottom: 17px;
 	/* border-bottom: solid 1px black; */
 }
 
@@ -237,9 +239,11 @@ section.services img {
 
 section.services h1 {
 	font-size: 35px;
+	margin-top: 20px;
 }
 section.services p {
 	font-size:20px;
+	margin: 20px 0;
 }
 
 main.services {
